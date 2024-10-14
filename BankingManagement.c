@@ -32,6 +32,7 @@ int employee() {
 
     if(matched==1){
         printf("Welcome to......\n");
+        printf("BANKING MANAGEMENT SYSTEM...\n");
         return 1;
     }
     else{
@@ -40,7 +41,6 @@ int employee() {
     }
 }
 void menu(){
-    printf("BANKING MANAGEMENT SYSTEM...\n");
     printf("Press 1 for Create new Account.\n");
     printf("Press 2 for Update Existing Account.\n");
     printf("Press 3 for Check Account details.\n");
