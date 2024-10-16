@@ -73,27 +73,31 @@ int main(){
     }
 
     int choice;
-    menu();
-    printf("Enter the choice: ");
-    scanf("%d",&choice);
-    getchar();
-    printf("\n");
+    while(1){
+        menu();
+        printf("Enter the choice: ");
+        scanf("%d",&choice);
+        getchar();
+        printf("\n");
 
-    switch(choice){
-        case 1: create();
-                break;
-        case 2: update();
-                break;
-        case 3: check_Details();
-                break;
-        case 4: withdraw_Money();
-                break;
-        case 5: deposit_Money();
-                break;
-        case 6: transfer_Money();
-                break;
-        default: close();
-  }
+        switch(choice){
+            case 1: create();
+                    break;
+            case 2: update();
+                    break;
+            case 3: check_Details();
+                    break;
+            case 4: withdraw_Money();
+                    break;
+            case 5: deposit_Money();
+                    break;
+            case 6: transfer_Money();
+                    break;
+            case 7: close();
+                    break;
+            default: printf("Please enter the valid choice...\n");
+        }
+    }
 
   return 0;
 }
